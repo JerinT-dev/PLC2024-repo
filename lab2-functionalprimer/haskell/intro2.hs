@@ -1,7 +1,7 @@
 module Intro2 where
 -- test Comment
 -- String algebra:
-name = "Alice"
+name = "Jerin  "
 -- "if" has a special syntax but otherwise a typed version of Lisp's "if":
 name2 = if name /= "" then name else "no name"
 
@@ -26,9 +26,10 @@ prg2 = do
 main =
   do
   putStrLn name -- like print, but only for strings
+  putStrLn name2
   -- putStrLn pname3 -- Couldn't match type ...; Expected type: String; Actual type: IO ()
   pname3 -- in Lisp: eval pname3
-  myprogram; prg1; prg2 -- sequencing, like 3 lines
+  myprogram; prg1'; prg2 -- sequencing, like 3 lines
 
 
 -- generic string conversion, using a Java-friendly name:

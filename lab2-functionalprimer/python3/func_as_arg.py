@@ -1,10 +1,10 @@
 def listFunc():
-    return [i for i in range(1, 6)] #Create list of ints from 1 to 5, Haskell equivalent [1..5]
+    return [i for i in range(a, b)] #Create list of ints from 1 to 5, Haskell equivalent [1..5]
 
-def applicatorFunc(inpFunc, s):
+def applicatorFunc(inpFunc a, b , s):
     if s=='s':
-        return sum(inpFunc())
+        return sum(inpFunc(a, b))
     else:
-        return sum(inpFunc())/5
+        return (sum(inpFunc(a, b ))/a)
 
-print(applicatorFunc(listFunc, 's'))
+print(applicatorFunc(listFunc 1, 10, 's'))
